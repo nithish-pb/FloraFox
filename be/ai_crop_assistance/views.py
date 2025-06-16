@@ -10,7 +10,7 @@ from rest_framework.views import APIView
 # WeatherView: Fetch weather information based on city
 class WeatherView(APIView):
     def get_weather(self, city_name):
-        api_key = "fbf5966046bc494b1d880b08044ddad4"  # OpenWeatherMap API key
+        api_key = "weathermap_api_key"  # OpenWeatherMap API key
         base_url = "http://api.openweathermap.org/data/2.5/weather?"
         complete_url = f"{base_url}q={city_name}&appid={api_key}&units=metric"
 
